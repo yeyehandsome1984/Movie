@@ -1,6 +1,5 @@
-// src/Container.js
 
-import Center from './Center';
+import Genre from './Genre';
 
 
 function Container () {
@@ -9,43 +8,18 @@ function Container () {
       <header>
         <h1>Movie App</h1>
       </header>
-      <Center
-        Title="General"
-        description1="About forwarding limits"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
+      <Genre
+        name="Comedy"
+        description="Comedy movies are designed to make the audience laugh."
+        movieTitle1={{ title: "Superbad", year: 2007 }}
+        movieTitle2={{ title: "Step Brothers", year: 2008 }}
       />
-      <Center
-        Title="Android"
-        description1="Verifying your number"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
+      <Genre
+        name="Romance"
+        description="Romance movies are love stories."
+        movieTitle1={{ title: "The Notebook", year: 2004 }}
+        movieTitle2={{ title: "Pride & Prejudice", year: 2005 }}
       />
-      <Center
-        Title="iPhone"
-        description1="Break Limit"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
-      />
-      <Center
-        Title="Web and Desktop"
-        description1="About forwarding limits"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
-      />
-      <Center
-        Title="KaiOS"
-        description1="About forwarding limits"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
-      />
-      <Center
-        Title="WhatsApp Business for Android"
-        description1="About forwarding limits"
-        description2="How to update Whatsapp"
-        description3="How to change group privacy settings"
-      />
-
     </div>
   );
 };
